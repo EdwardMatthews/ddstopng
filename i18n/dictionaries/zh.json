@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "在线DDS转PNG工具",
+    "subtitle": "快速、免费、安全的DDS到PNG转换。无需注册。",
+    "dropzone": {
+      "title": "将DDS文件拖放到这里",
+      "subtitle": "或点击选择文件"
+    },
+    "convert": "转换为PNG",
+    "converting": "转换中...",
+    "download": "下载PNG"
+  },
+  "features": {
+    "title": "为什么选择我们的转换器？",
+    "subtitle": "简单、快速、安全的DDS到PNG转换",
+    "items": {
+      "speed": {
+        "title": "快速转换",
+        "description": "几秒钟内将DDS文件转换为PNG格式"
+      },
+      "security": {
+        "title": "安全可靠",
+        "description": "文件在本地处理，从不存储在服务器上"
+      },
+      "free": {
+        "title": "免费下载",
+        "description": "无限制下载转换后的PNG文件"
+      },
+      "easy": {
+        "title": "易于使用",
+        "description": "简单的拖放界面，快速文件转换"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "使用方法",
+    "subtitle": "三个简单步骤将DDS文件转换为PNG",
+    "steps": {
+      "upload": {
+        "title": "上传DDS文件",
+        "description": "拖放或点击上传DDS文件"
+      },
+      "convert": {
+        "title": "转换",
+        "description": "系统将自动将文件转换为PNG格式"
+      },
+      "download": {
+        "title": "下载",
+        "description": "立即下载转换后的PNG文件"
+      }
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "items": {
+      "what": {
+        "question": "什么是DDS文件？",
+        "answer": "DDS（DirectDraw Surface）是一种主要用于视频游戏和3D应用程序的压缩纹理文件格式。它是由微软为DirectX开发的。"
+      },
+      "why": {
+        "question": "为什么要转换DDS为PNG？",
+        "answer": "PNG文件格式被更广泛地支持，可以被大多数图像查看器和编辑器打开。将DDS转换为PNG可以使您的纹理更容易访问和使用。"
+      },
+      "limits": {
+        "question": "是否有文件大小限制？",
+        "answer": "是的，我们目前支持最大50MB的DDS文件。对于更大的文件，请联系我们获取定制解决方案。"
+      },
+      "security": {
+        "question": "我的数据安全吗？",
+        "answer": "是的，所有文件处理都在您的浏览器本地完成。您的文件永远不会存储在我们的服务器上，转换后会自动删除。"
+      },
+      "formats": {
+        "question": "支持哪些DDS格式？",
+        "answer": "我们支持大多数常见的DDS格式，包括DXT1、DXT3、DXT5、BC7和未压缩格式。如果您有特殊的格式需求，请联系我们。"
+      }
+    }
+  }
+} 

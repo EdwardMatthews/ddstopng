@@ -1,0 +1,78 @@
+{
+  "hero": {
+    "title": "Convert DDS to PNG Online",
+    "subtitle": "Fast, free, and secure DDS to PNG conversion. No registration required.",
+    "dropzone": {
+      "title": "Drag and drop your DDS file here",
+      "subtitle": "or click to select file"
+    },
+    "convert": "Convert to PNG",
+    "converting": "Converting...",
+    "download": "Download PNG"
+  },
+  "features": {
+    "title": "Why Choose Our Converter?",
+    "subtitle": "Simple, fast, and secure DDS to PNG conversion",
+    "items": {
+      "speed": {
+        "title": "Fast Conversion",
+        "description": "Convert your DDS files to PNG format in seconds"
+      },
+      "security": {
+        "title": "Secure",
+        "description": "Your files are processed locally and never stored on our servers"
+      },
+      "free": {
+        "title": "Free Downloads",
+        "description": "Download converted PNG files without any restrictions"
+      },
+      "easy": {
+        "title": "Easy to Use",
+        "description": "Simple drag and drop interface for quick file conversion"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Convert your DDS files to PNG in three simple steps",
+    "steps": {
+      "upload": {
+        "title": "Upload DDS File",
+        "description": "Drag and drop or click to upload your DDS file"
+      },
+      "convert": {
+        "title": "Convert",
+        "description": "Our system will automatically convert your file to PNG format"
+      },
+      "download": {
+        "title": "Download",
+        "description": "Download your converted PNG file instantly"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "items": {
+      "what": {
+        "question": "What is a DDS file?",
+        "answer": "DDS (DirectDraw Surface) is a file format used primarily in video games and 3D applications for storing compressed texture files. It was developed by Microsoft for use with DirectX."
+      },
+      "why": {
+        "question": "Why convert DDS to PNG?",
+        "answer": "PNG files are more widely supported and can be opened by most image viewers and editors. Converting DDS to PNG makes your textures more accessible for general use."
+      },
+      "limits": {
+        "question": "Are there any file size limits?",
+        "answer": "Yes, we currently support DDS files up to 50MB in size. For larger files, please contact us for custom solutions."
+      },
+      "security": {
+        "question": "Is my data secure?",
+        "answer": "Yes, all file processing is done locally in your browser. Your files are never stored on our servers and are automatically deleted after conversion."
+      },
+      "formats": {
+        "question": "What DDS formats are supported?",
+        "answer": "We support most common DDS formats including DXT1, DXT3, DXT5, BC7, and uncompressed formats. If you have a specific format need, please contact us."
+      }
+    }
+  }
+} 
