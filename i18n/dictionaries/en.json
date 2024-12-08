@@ -52,6 +52,7 @@
   },
   "faq": {
     "title": "DDS to PNG Converter FAQ",
+    "subtitle": "Common questions about DDS to PNG conversion process and our online converter",
     "items": {
       "what": {
         "question": "What is a DDS file and how to convert it to PNG?",

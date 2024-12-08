@@ -7,6 +7,7 @@ import { ChevronDown } from 'lucide-react'
 interface FAQProps {
   dictionary: {
     title: string
+    subtitle: string
     items: {
       what: {
         question: string
@@ -56,7 +57,7 @@ export default function FAQ({ dictionary }: FAQProps) {
           {dictionary.title}
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Common questions about DDS to PNG conversion process and our online converter
+          {dictionary.subtitle}
         </p>
 
         <div 
