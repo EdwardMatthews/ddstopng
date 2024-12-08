@@ -73,7 +73,6 @@ function readDDSHeader(buffer: Buffer): DDSHeader {
 }
 
 function decodeDXT1Block(block: Buffer, pixels: Buffer, width: number, x: number, y: number) {
-  console.log('Decoding DXT1 block')
   const c0 = block.readUInt16LE(0)
   const c1 = block.readUInt16LE(2)
   const codes = block.readUInt32LE(4)
@@ -108,8 +107,6 @@ function decodeDXT1Block(block: Buffer, pixels: Buffer, width: number, x: number
     colors.push({ r: 0, g: 0, b: 0, a: 0 }) // Transparent black
   }
 
-  console.log(colors)
-
   // Write pixels
   for (let py = 0; py < 4; py++) {
     for (let px = 0; px < 4; px++) {
@@ -125,8 +122,6 @@ function decodeDXT1Block(block: Buffer, pixels: Buffer, width: number, x: number
       }
     }
   }
-
-  console.log('DXT1 block decoded')
 }
 
 function decodeDXT3Block(block: Buffer, pixels: Buffer, width: number, x: number, y: number) {
@@ -194,8 +189,6 @@ export async function convertDDStoPNG(buffer: Buffer): Promise<Buffer> {
     const header = readDDSHeader(buffer)
     const { width, height } = header
 
-    console.log(header)
-
     // Create buffer for raw pixel data
     const pixels = Buffer.alloc(width * height * 4)
 
@@ -245,9 +238,6 @@ export async function convertDDStoPNG(buffer: Buffer): Promise<Buffer> {
     } else {
       throw new Error('Unsupported DDS format')
     }
-
-    console.log('Pixels decoded')
-    console.log(pixels)
 
     // Convert to PNG using sharp
     return await sharp(pixels, {

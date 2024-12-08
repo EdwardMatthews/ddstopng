@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow admin and api routes
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap
+Sitemap: https://dds2png.com/sitemap.xml 

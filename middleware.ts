@@ -5,7 +5,6 @@ import Negotiator from 'negotiator'
 import { locales, defaultLocale } from './i18n/config'
 
 function getLocale(request: NextRequest): string {
-  // Check if there's a cookie with language preference
   const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value
   if (cookieLocale && locales.includes(cookieLocale as any)) {
     return cookieLocale
@@ -21,19 +20,18 @@ function getLocale(request: NextRequest): string {
 }
 
 export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname
+  const { pathname } = request.nextUrl
 
-  // Skip if the request is for static files or API
+  // 对于静态文件，直接跳过处理
   if (
-    pathname.startsWith('/_next') ||
-    pathname.startsWith('/api/') ||
-    pathname.startsWith('/static/') ||
-    pathname.includes('.')
+    pathname.includes('.') || 
+    pathname.startsWith('/_next') || 
+    pathname.startsWith('/api')
   ) {
-    return
+    return NextResponse.next()
   }
 
-  // Check if the pathname starts with a locale
+  // 检查路径是否包含语言前缀
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   )
@@ -42,20 +40,23 @@ export function middleware(request: NextRequest) {
     const locale = getLocale(request)
     const newUrl = new URL(`/${locale}${pathname}`, request.url)
     
-    // Set cookie for consistent language across requests
     const response = NextResponse.redirect(newUrl)
     response.cookies.set('NEXT_LOCALE', locale, {
       path: '/',
-      maxAge: 60 * 60 * 24 * 365, // 1 year
+      maxAge: 60 * 60 * 24 * 365,
     })
     
     return response
   }
+
+  return NextResponse.next()
 }
 
 export const config = {
+  // 更新 matcher 以明确排除静态文件
   matcher: [
-    // Skip all internal paths (_next, api, static)
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    // 只匹配不带扩展名的路径
+    '/((?!api|_next/static|_next/image|.*\\..*$).*)',
+    '/'
   ],
 } 

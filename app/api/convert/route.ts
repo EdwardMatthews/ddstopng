@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from 'next/server'
 import { convertDDStoPNG } from '@/lib/ddsConverter'
 
 export async function POST(request: NextRequest) {
-  console.log('Conversion requested')
   try {
     const formData = await request.formData()
     const file = formData.get('file') as File
@@ -17,11 +16,8 @@ export async function POST(request: NextRequest) {
     // Convert file to buffer
     const buffer = Buffer.from(await file.arrayBuffer())
     
-    console.log('File converted to buffer')
     // Convert DDS to PNG
     const pngBuffer = await convertDDStoPNG(buffer)
-    
-    console.log('PNG buffer created')
 
     // Return the PNG buffer as base64
     const base64Data = pngBuffer.toString('base64')
