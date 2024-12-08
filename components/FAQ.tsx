@@ -65,13 +65,12 @@ export default function FAQ({ dictionary }: FAQProps) {
           itemType="https://schema.org/FAQPage"
         >
           {faqs.map((faq, index) => (
-            <motion.div
+            <div
               key={index}
               className="bg-white rounded-lg shadow-sm"
-              initial={false}
               itemScope
-              itemProp="mainEntity"
               itemType="https://schema.org/Question"
+              itemProp="mainEntity"
             >
               <button
                 className="w-full px-6 py-4 flex items-center justify-between text-left"
@@ -93,27 +92,30 @@ export default function FAQ({ dictionary }: FAQProps) {
                 </motion.div>
               </button>
 
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                    itemScope
-                    itemProp="acceptedAnswer"
-                    itemType="https://schema.org/Answer"
-                  >
-                    <div 
-                      className="px-6 pb-4 text-gray-600"
-                      itemProp="text"
+              <div
+                itemScope
+                itemType="https://schema.org/Answer"
+                itemProp="acceptedAnswer"
+              >
+                <AnimatePresence>
+                  {openIndex === index && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
                     >
-                      {faq.answer}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
+                      <div 
+                        className="px-6 pb-4 text-gray-600"
+                        itemProp="text"
+                      >
+                        {faq.answer}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            </div>
           ))}
         </div>
       </div>
