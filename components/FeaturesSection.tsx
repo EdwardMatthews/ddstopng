@@ -47,27 +47,34 @@ export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
   const features = [
     {
       icon: <Zap className="w-6 h-6" />,
-      ...dictionary.items.speed
+      ...dictionary.items.speed,
+      ariaLabel: "Fast DDS to PNG conversion speed"
     },
     {
       icon: <Shield className="w-6 h-6" />,
-      ...dictionary.items.security
+      ...dictionary.items.security,
+      ariaLabel: "Secure DDS file conversion"
     },
     {
       icon: <Download className="w-6 h-6" />,
-      ...dictionary.items.free
+      ...dictionary.items.free,
+      ariaLabel: "Free DDS to PNG downloads"
     },
     {
       icon: <Smile className="w-6 h-6" />,
-      ...dictionary.items.easy
+      ...dictionary.items.easy,
+      ariaLabel: "Easy DDS to PNG conversion"
     }
   ]
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" aria-labelledby="features-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
+          <h2 
+            id="features-heading" 
+            className="text-3xl font-bold text-gray-900 sm:text-4xl"
+          >
             {dictionary.title}
           </h2>
           <p className="mt-4 text-xl text-gray-600">
@@ -81,14 +88,21 @@ export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
+          role="list"
+          aria-label="DDS to PNG converter features"
         >
           {features.map((feature, index) => (
             <motion.div
               key={index}
               className="relative p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
               variants={item}
+              role="listitem"
+              aria-label={feature.ariaLabel}
             >
-              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+              <div 
+                className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4"
+                aria-hidden="true"
+              >
                 {feature.icon}
               </div>
               <h3 className="text-lg font-medium text-gray-900 mb-2">

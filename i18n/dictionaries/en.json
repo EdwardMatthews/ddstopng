@@ -11,67 +11,67 @@
     "download": "Download PNG"
   },
   "features": {
-    "title": "Why Choose Our Converter?",
-    "subtitle": "Simple, fast, and secure DDS to PNG conversion",
+    "title": "Why Choose Our DDS to PNG Converter?",
+    "subtitle": "Professional DDS to PNG conversion with advanced features",
     "items": {
       "speed": {
-        "title": "Fast Conversion",
-        "description": "Convert your DDS files to PNG format in seconds"
+        "title": "Lightning-Fast DDS Conversion",
+        "description": "Convert DDS files to PNG format instantly with our optimized conversion engine"
       },
       "security": {
-        "title": "Secure",
-        "description": "Your files are processed locally and never stored on our servers"
+        "title": "Secure File Processing",
+        "description": "Your DDS files are processed locally with end-to-end encryption for maximum security"
       },
       "free": {
-        "title": "Free Downloads",
-        "description": "Download converted PNG files without any restrictions"
+        "title": "Free DDS to PNG Downloads",
+        "description": "Download your converted PNG files without any restrictions or watermarks"
       },
       "easy": {
-        "title": "Easy to Use",
-        "description": "Simple drag and drop interface for quick file conversion"
+        "title": "Simple DDS Conversion",
+        "description": "Convert DDS to PNG with our user-friendly interface - no technical expertise required"
       }
     }
   },
   "howItWorks": {
-    "title": "How It Works",
-    "subtitle": "Convert your DDS files to PNG in three simple steps",
+    "title": "How to Convert DDS to PNG",
+    "subtitle": "Transform your DDS files to PNG format in three simple steps - Fast, Free, and Secure",
     "steps": {
       "upload": {
-        "title": "Upload DDS File",
-        "description": "Drag and drop or click to upload your DDS file"
+        "title": "Upload Your DDS File",
+        "description": "Simply drag and drop your DDS texture file or click to select it from your computer"
       },
       "convert": {
-        "title": "Convert",
-        "description": "Our system will automatically convert your file to PNG format"
+        "title": "Convert DDS to PNG",
+        "description": "Our advanced converter will instantly transform your DDS file into high-quality PNG format"
       },
       "download": {
-        "title": "Download",
-        "description": "Download your converted PNG file instantly"
+        "title": "Get Your PNG File",
+        "description": "Download your converted PNG image immediately - no waiting, no registration required"
       }
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
+    "title": "DDS to PNG Converter FAQ",
     "items": {
       "what": {
-        "question": "What is a DDS file?",
-        "answer": "DDS (DirectDraw Surface) is a file format used primarily in video games and 3D applications for storing compressed texture files. It was developed by Microsoft for use with DirectX."
+        "question": "What is a DDS file and how to convert it to PNG?",
+        "answer": "DDS (DirectDraw Surface) is a Microsoft-developed file format used in video games and 3D applications for storing compressed texture files. Our online converter allows you to easily convert DDS files to PNG format, making them accessible in standard image editors and viewers."
       },
       "why": {
-        "question": "Why convert DDS to PNG?",
-        "answer": "PNG files are more widely supported and can be opened by most image viewers and editors. Converting DDS to PNG makes your textures more accessible for general use."
+        "question": "Why should I convert DDS to PNG format?",
+        "answer": "Converting DDS to PNG makes your texture files universally accessible. While DDS files are optimized for games, PNG files can be opened by most image editors and viewers. PNG also maintains high image quality with lossless compression, making it perfect for editing and sharing game textures."
       },
       "limits": {
-        "question": "Are there any file size limits?",
-        "answer": "Yes, we currently support DDS files up to 50MB in size. For larger files, please contact us for custom solutions."
+        "question": "What are the file size limits for DDS to PNG conversion?",
+        "answer": "Our DDS to PNG converter supports files up to 50MB in size. The conversion process is optimized for quick processing while maintaining high image quality. For larger DDS files, please contact us for custom conversion solutions."
       },
       "security": {
-        "question": "Is my data secure?",
-        "answer": "Yes, all file processing is done locally in your browser. Your files are never stored on our servers and are automatically deleted after conversion."
+        "question": "Is my DDS file secure during conversion to PNG?",
+        "answer": "Yes, absolutely. Our DDS to PNG converter processes all files locally in your browser. Your DDS files are never uploaded to any server, ensuring complete privacy and security during the conversion process."
       },
       "formats": {
-        "question": "What DDS formats are supported?",
-        "answer": "We support most common DDS formats including DXT1, DXT3, DXT5, BC7, and uncompressed formats. If you have a specific format need, please contact us."
+        "question": "Which DDS formats can be converted to PNG?",
+        "answer": "Our DDS to PNG converter supports all common DDS formats including DXT1, DXT3, DXT5, BC7, and uncompressed formats. The converter automatically detects the format and converts it to high-quality PNG while preserving transparency and image quality."
       }
     }
   },

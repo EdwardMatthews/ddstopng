@@ -11,67 +11,67 @@
     "download": "Unduh PNG"
   },
   "features": {
-    "title": "Mengapa Memilih Konverter Kami?",
-    "subtitle": "Konversi DDS ke PNG yang sederhana, cepat, dan aman",
+    "title": "Mengapa Memilih Konverter DDS ke PNG Kami?",
+    "subtitle": "Konversi DDS ke PNG profesional dengan fitur canggih",
     "items": {
       "speed": {
-        "title": "Konversi Cepat",
-        "description": "Konversi file DDS Anda ke format PNG dalam hitungan detik"
+        "title": "Konversi DDS Super Cepat",
+        "description": "Konversi file DDS ke format PNG secara instan dengan mesin konversi yang dioptimalkan"
       },
       "security": {
-        "title": "Aman",
-        "description": "File Anda diproses secara lokal dan tidak pernah disimpan di server kami"
+        "title": "Pemrosesan File DDS Aman",
+        "description": "File DDS Anda diproses secara lokal dengan enkripsi end-to-end untuk keamanan maksimal"
       },
       "free": {
-        "title": "Unduh Gratis",
-        "description": "Unduh file PNG yang dikonversi tanpa batasan"
+        "title": "Unduh DDS ke PNG Gratis",
+        "description": "Unduh file PNG hasil konversi tanpa batasan atau watermark apapun"
       },
       "easy": {
-        "title": "Mudah Digunakan",
-        "description": "Antarmuka tarik dan lepas yang sederhana untuk konversi file yang cepat"
+        "title": "Konversi DDS Sederhana",
+        "description": "Konversi DDS ke PNG dengan antarmuka yang mudah digunakan - tidak perlu keahlian teknis"
       }
     }
   },
   "howItWorks": {
-    "title": "Cara Kerja",
-    "subtitle": "Konversi file DDS Anda ke PNG dalam tiga langkah sederhana",
+    "title": "Cara Mengkonversi DDS ke PNG",
+    "subtitle": "Ubah file DDS Anda menjadi format PNG dalam tiga langkah sederhana - Cepat, Gratis, dan Aman",
     "steps": {
       "upload": {
-        "title": "Unggah File DDS",
-        "description": "Tarik dan lepas atau klik untuk mengunggah file DDS Anda"
+        "title": "Unggah File DDS Anda",
+        "description": "Cukup seret dan lepas file tekstur DDS Anda atau klik untuk memilihnya dari komputer Anda"
       },
       "convert": {
-        "title": "Konversi",
-        "description": "Sistem kami akan secara otomatis mengkonversi file Anda ke format PNG"
+        "title": "Konversi DDS ke PNG",
+        "description": "Konverter canggih kami akan langsung mengubah file DDS Anda menjadi format PNG berkualitas tinggi"
       },
       "download": {
-        "title": "Unduh",
-        "description": "Unduh file PNG yang dikonversi secara instan"
+        "title": "Dapatkan File PNG Anda",
+        "description": "Unduh gambar PNG hasil konversi segera - tanpa menunggu, tanpa registrasi"
       }
     }
   },
   "faq": {
-    "title": "Pertanyaan yang Sering Diajukan",
+    "title": "FAQ Konverter DDS ke PNG",
     "items": {
       "what": {
-        "question": "Apa itu file DDS?",
-        "answer": "DDS (DirectDraw Surface) adalah format file yang terutama digunakan dalam video game dan aplikasi 3D untuk menyimpan file tekstur terkompresi. Format ini dikembangkan oleh Microsoft untuk digunakan dengan DirectX."
+        "question": "Apa itu file DDS dan bagaimana mengkonversinya ke PNG?",
+        "answer": "DDS (DirectDraw Surface) adalah format file yang dikembangkan Microsoft untuk video game dan aplikasi 3D untuk menyimpan file tekstur terkompresi. Konverter online kami memungkinkan Anda dengan mudah mengkonversi file DDS ke format PNG, membuatnya dapat diakses di editor dan penampil gambar standar."
       },
       "why": {
-        "question": "Mengapa mengkonversi DDS ke PNG?",
-        "answer": "Format file PNG didukung secara lebih luas dan dapat dibuka oleh sebagian besar penampil dan editor gambar. Mengkonversi DDS ke PNG membuat tekstur Anda lebih mudah diakses untuk penggunaan umum."
+        "question": "Mengapa harus mengkonversi DDS ke format PNG?",
+        "answer": "Mengkonversi DDS ke PNG membuat file tekstur Anda dapat diakses secara universal. Sementara file DDS dioptimalkan untuk game, file PNG dapat dibuka oleh sebagian besar editor dan penampil gambar. PNG juga mempertahankan kualitas gambar tinggi dengan kompresi lossless, membuatnya sempurna untuk mengedit dan berbagi tekstur game."
       },
       "limits": {
-        "question": "Apakah ada batasan ukuran file?",
-        "answer": "Ya, saat ini kami mendukung file DDS hingga ukuran 50MB. Untuk file yang lebih besar, silakan hubungi kami untuk solusi khusus."
+        "question": "Berapa batas ukuran file untuk konversi DDS ke PNG?",
+        "answer": "Konverter DDS ke PNG kami mendukung file hingga ukuran 50MB. Proses konversi dioptimalkan untuk pemrosesan cepat sambil mempertahankan kualitas gambar tinggi. Untuk file DDS yang lebih besar, silakan hubungi kami untuk solusi konversi khusus."
       },
       "security": {
-        "question": "Apakah data saya aman?",
-        "answer": "Ya, semua pemrosesan file dilakukan secara lokal di browser Anda. File Anda tidak pernah disimpan di server kami dan dihapus secara otomatis setelah konversi."
+        "question": "Apakah file DDS saya aman selama konversi ke PNG?",
+        "answer": "Ya, tentu saja. Konverter DDS ke PNG kami memproses semua file secara lokal di browser Anda. File DDS Anda tidak pernah diunggah ke server mana pun, memastikan privasi dan keamanan lengkap selama proses konversi."
       },
       "formats": {
-        "question": "Format DDS apa yang didukung?",
-        "answer": "Kami mendukung sebagian besar format DDS umum termasuk DXT1, DXT3, DXT5, BC7, dan format tidak terkompresi. Jika Anda memiliki kebutuhan format khusus, silakan hubungi kami."
+        "question": "Format DDS apa yang dapat dikonversi ke PNG?",
+        "answer": "Konverter DDS ke PNG kami mendukung semua format DDS umum termasuk DXT1, DXT3, DXT5, BC7, dan format tidak terkompresi. Konverter secara otomatis mendeteksi format dan mengkonversinya ke PNG berkualitas tinggi sambil mempertahankan transparansi dan kualitas gambar."
       }
     }
   },
