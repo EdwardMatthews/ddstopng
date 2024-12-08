@@ -1,4 +1,5 @@
 import FileUploadSection from '@/components/FileUploadSection'
+import IntroSection from '@/components/IntroSection'
 import FeaturesSection from '@/components/FeaturesSection'
 import HowItWorks from '@/components/HowItWorks'
 import FAQ from '@/components/FAQ'
@@ -27,6 +28,8 @@ export default async function Home({
           </p>
           <FileUploadSection dictionary={dictionary.hero} />
         </section>
+
+        <IntroSection dictionary={dictionary.intro} />
 
         {/* Features Section */}
         <FeaturesSection dictionary={dictionary.features} />

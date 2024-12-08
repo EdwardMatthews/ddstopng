@@ -74,5 +74,26 @@
         "answer": "Kami mendukung sebagian besar format DDS umum termasuk DXT1, DXT3, DXT5, BC7, dan format tidak terkompresi. Jika Anda memiliki kebutuhan format khusus, silakan hubungi kami."
       }
     }
+  },
+  "intro": {
+    "title": "Apa itu Konversi DDS ke PNG?",
+    "description": [
+      "DDS (DirectDraw Surface) adalah format gambar eksklusif yang dikembangkan oleh Microsoft, terutama digunakan dalam video game dan aplikasi 3D untuk menyimpan file tekstur terkompresi. Meskipun file DDS efisien untuk game, format ini tidak didukung secara luas oleh penampil dan editor gambar umum.",
+      "Mengkonversi DDS ke PNG membuat file tekstur Anda lebih mudah diakses dan digunakan di berbagai platform dan aplikasi. PNG (Portable Network Graphics) adalah format yang didukung secara universal yang mempertahankan kualitas gambar tinggi dengan kompresi lossless."
+    ],
+    "useCases": {
+      "title": "Penggunaan Umum Konversi DDS ke PNG",
+      "items": [
+        "Modding game dan kustomisasi tekstur",
+        "Mengekstrak aset game untuk pembuatan konten",
+        "Mengedit tekstur game di editor gambar standar",
+        "Berbagi screenshot dan karya seni game",
+        "Membuat dokumentasi dan tutorial"
+      ]
+    },
+    "freeToUse": {
+      "title": "100% Gratis dan Tanpa Batasan",
+      "description": "Konverter DDS ke PNG kami sepenuhnya gratis untuk digunakan tanpa batasan. Semua gambar yang dikonversi diproses secara lokal di browser Anda, dan Anda dapat menggunakan file PNG hasil konversi untuk tujuan apa pun, baik pribadi maupun komersial."
+    }
   }
 } 
