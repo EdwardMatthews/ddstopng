@@ -2,9 +2,14 @@
 User-agent: *
 Allow: /
 
-# Disallow admin and api routes
+# 允许访问所有语言版本
+Allow: /en/
+Allow: /zh/
+Allow: /id/
+
+# 禁止访问 API 和系统路由
 Disallow: /api/
 Disallow: /_next/
 
 # Sitemap
-Sitemap: https://dds2png.com/sitemap.xml 
+Sitemap: https://ddstopng.pro/sitemap.xml 
