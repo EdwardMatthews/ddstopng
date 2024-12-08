@@ -134,6 +134,11 @@
           "href": "https://iframegenerator.pro"
         }
       ]
+    },
+    "social": {
+      "title": "Connect With Us",
+      "share": "Share",
+      "github": "View on GitHub"
     }
   }
 } 
