@@ -95,5 +95,45 @@
       "title": "100% Gratis dan Tanpa Batasan",
       "description": "Konverter DDS ke PNG kami sepenuhnya gratis untuk digunakan tanpa batasan. Semua gambar yang dikonversi diproses secara lokal di browser Anda, dan Anda dapat menggunakan file PNG hasil konversi untuk tujuan apa pun, baik pribadi maupun komersial."
     }
+  },
+  "footer": {
+    "about": {
+      "title": "Tentang DDS ke PNG",
+      "description": "Alat online gratis untuk mengkonversi file DDS (DirectDraw Surface) ke format PNG. Cepat, aman, dan mudah digunakan. Sempurna untuk modder game, pengembang, dan kreator konten."
+    },
+    "navigation": {
+      "title": "Tautan Cepat",
+      "items": [
+        {
+          "label": "Beranda",
+          "href": "#home"
+        },
+        {
+          "label": "Pengenalan",
+          "href": "#intro"
+        },
+        {
+          "label": "Fitur",
+          "href": "#features"
+        },
+        {
+          "label": "Cara Kerja",
+          "href": "#how-it-works"
+        },
+        {
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ]
+    },
+    "tools": {
+      "title": "Alat Berguna",
+      "items": [
+        {
+          "label": "IframeGenerator",
+          "href": "https://iframegenerator.pro"
+        }
+      ]
+    }
   }
 } 

@@ -95,5 +95,45 @@
       "title": "100% Free and Unrestricted",
       "description": "Our DDS to PNG converter is completely free to use with no limitations. All converted images are processed locally in your browser, and you can use the output PNG files for any purpose, whether personal or commercial."
     }
+  },
+  "footer": {
+    "about": {
+      "title": "About DDS to PNG",
+      "description": "Free online tool for converting DDS (DirectDraw Surface) files to PNG format. Fast, secure, and easy to use. Perfect for game modders, developers, and content creators."
+    },
+    "navigation": {
+      "title": "Quick Links",
+      "items": [
+        {
+          "label": "Home",
+          "href": "#home"
+        },
+        {
+          "label": "Introduction",
+          "href": "#intro"
+        },
+        {
+          "label": "Features",
+          "href": "#features"
+        },
+        {
+          "label": "How It Works",
+          "href": "#how-it-works"
+        },
+        {
+          "label": "FAQ",
+          "href": "#faq"
+        }
+      ]
+    },
+    "tools": {
+      "title": "Useful Tools",
+      "items": [
+        {
+          "label": "Iframe Generator",
+          "href": "https://iframegenerator.pro"
+        }
+      ]
+    }
   }
 } 

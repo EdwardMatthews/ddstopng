@@ -55,7 +55,7 @@
     "items": {
       "what": {
         "question": "什么是DDS文件？如何转换为PNG？",
-        "answer": "DDS（DirectDraw Surface）是微软开发的一种用于视频游戏和3D应用程序的压缩纹理文件格式。我们的在线转换器可以轻松将DDS文件转换为PNG格式，使其能够在标准图像编辑器和查看器中使用。"
+        "answer": "DDS（DirectDraw Surface）是微软开发的一种用于视频游戏和3D应用程序的压缩纹理文件格式。我们的在线转换器可以轻松将DDS文件转换为PNG格式，使其能够在标准图像编辑器和���看器中使用。"
       },
       "why": {
         "question": "为什么要将DDS转换为PNG格式？",
@@ -71,7 +71,7 @@
       },
       "formats": {
         "question": "支持将哪些DDS格式转换为PNG？",
-        "answer": "我们的DDS转PNG转换器支持所有常见的DDS格式，包括DXT1、DXT3、DXT5、BC7和未压缩格式。转换器会自动检测格式并转换为高质量PNG，同时保持透明度和图像质量。"
+        "answer": "我们的DDS转PNG转换器支持所有常见的DDS格式，包括DXT1、DXT3、DXT5、BC7和未压缩格式。转换器会自动检测格式并转换为高质量PNG，同时保持明度和图像质量。"
       }
     }
   },
@@ -94,6 +94,46 @@
     "freeToUse": {
       "title": "100%免费且无限制",
       "description": "我们的DDS转PNG转换器完全免费使用，没有任何限制。所有转换后的图像都在您的浏览器中本地处理，您可以将输出的PNG文件用于任何目的，无论是个人还是商业用途。"
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "关于DDS转PNG工具",
+      "description": "免费的在线DDS（DirectDraw Surface）转PNG格式工具。快速、安全、易用。适合游戏模组制作者、开发者和内容创作者使用。"
+    },
+    "navigation": {
+      "title": "快速导航",
+      "items": [
+        {
+          "label": "首页",
+          "href": "#home"
+        },
+        {
+          "label": "简介",
+          "href": "#intro"
+        },
+        {
+          "label": "功能特点",
+          "href": "#features"
+        },
+        {
+          "label": "使用方法",
+          "href": "#how-it-works"
+        },
+        {
+          "label": "常见问题",
+          "href": "#faq"
+        }
+      ]
+    },
+    "tools": {
+      "title": "实用工具",
+      "items": [
+        {
+          "label": "Iframe生成器",
+          "href": "https://iframegenerator.pro"
+        }
+      ]
     }
   }
 } 
