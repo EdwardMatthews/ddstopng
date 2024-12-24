@@ -56,23 +56,17 @@ export default function FAQ({ dictionary }: FAQProps) {
 
         <div 
           className="space-y-4"
-          itemScope 
-          itemType="https://schema.org/FAQPage"
         >
           {faqs.map((faq, index) => (
             <details
               key={index}
               className="bg-white rounded-lg shadow-sm group"
-              itemScope
-              itemType="https://schema.org/Question"
-              itemProp="mainEntity"
             >
               <summary
                 className="w-full px-6 py-4 flex items-center justify-between text-left cursor-pointer list-none"
               >
                 <span 
                   className="text-lg font-medium text-gray-900"
-                  itemProp="name"
                 >
                   {faq.question}
                 </span>
@@ -86,13 +80,9 @@ export default function FAQ({ dictionary }: FAQProps) {
 
               <div
                 className="px-6 pb-4 text-gray-600"
-                itemScope
-                itemType="https://schema.org/Answer"
-                itemProp="acceptedAnswer"
               >
                   <div 
                     className="px-6 pb-4 text-gray-600"
-                    itemProp="text"
                   >
                     {faq.answer}
                   </div>
