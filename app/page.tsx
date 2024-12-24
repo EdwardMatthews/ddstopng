@@ -4,6 +4,7 @@ import FeaturesSection from '@/components/FeaturesSection'
 import HowItWorks from '@/components/HowItWorks'
 import FAQ from '@/components/FAQ'
 import LanguageSwitcher from '@/components/LanguageSwitcher'
+import LanguageDetector from '@/components/LanguageDetector'
 import { getDictionary } from '@/i18n/getDictionary'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -14,6 +15,7 @@ export default async function Home() {
   return (
     <>
       <Header lang="en" />
+      <LanguageDetector />
       <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         <LanguageSwitcher />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
