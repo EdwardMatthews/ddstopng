@@ -9,7 +9,6 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: V
   return {
     title: dictionary.metadata.title,
     description: dictionary.metadata.description,
-    keywords: dictionary.metadata.keywords,
     metadataBase: new URL('https://www.ddstopng.pro'),
     alternates: {
       canonical: `/${lang}`,

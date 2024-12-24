@@ -11,7 +11,6 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: dictionary.metadata.title,
     description: dictionary.metadata.description,
-    keywords: dictionary.metadata.keywords,
     metadataBase: new URL('https://www.ddstopng.pro'),
     alternates: {
       canonical: '/',
