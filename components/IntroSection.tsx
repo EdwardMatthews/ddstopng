@@ -1,7 +1,3 @@
-'use client'
-
-import { motion } from 'framer-motion'
-
 interface IntroSectionProps {
   dictionary: {
     title: string
@@ -28,11 +24,8 @@ export default function IntroSection({ dictionary }: IntroSectionProps) {
           </h2>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="max-w-4xl mx-auto space-y-12"
+        <div
+          className="max-w-4xl mx-auto space-y-12 opacity-0 translate-y-5 animate-intro-content"
         >
           {/* Description */}
           <div className="space-y-4">
@@ -66,7 +59,7 @@ export default function IntroSection({ dictionary }: IntroSectionProps) {
               {dictionary.freeToUse.description}
             </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

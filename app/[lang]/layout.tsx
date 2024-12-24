@@ -10,7 +10,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: V
     title: dictionary.metadata.title,
     description: dictionary.metadata.description,
     keywords: dictionary.metadata.keywords,
-    metadataBase: new URL('https://ddstopng.pro'),
+    metadataBase: new URL('https://www.ddstopng.pro'),
     alternates: {
       canonical: `/${lang}`,
       languages: {
@@ -22,7 +22,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: V
     openGraph: {
       title: dictionary.metadata.ogTitle,
       description: dictionary.metadata.ogDescription,
-      url: `https://ddstopng.pro/${lang}`,
+      url: `https://www.ddstopng.pro/${lang}`,
       siteName: dictionary.metadata.siteName,
       locale: lang,
       type: 'website',
@@ -54,13 +54,17 @@ export default async function LangLayout({
   const dictionary = await getDictionary(lang)
 
   return (
-    <DictionaryProvider dictionary={dictionary}>
-      <div className="min-h-screen flex flex-col" lang={lang}>
-        <Header />
-        <main className="flex-grow">
-          {children}
-        </main>
-      </div>
-    </DictionaryProvider>
+    <html lang={lang}>
+      <body>
+        <DictionaryProvider dictionary={dictionary}>
+          <div className="min-h-screen flex flex-col" lang={lang}>
+            <Header lang={lang} />
+            <main className="flex-grow">
+              {children}
+            </main>
+          </div>
+        </DictionaryProvider>
+      </body>
+    </html>
   )
 } 

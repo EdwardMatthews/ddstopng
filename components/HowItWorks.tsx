@@ -1,7 +1,4 @@
-'use client'
-
 import { Upload, Cog, Download } from 'lucide-react'
-import { motion } from 'framer-motion'
 
 interface HowItWorksProps {
   dictionary: {
@@ -67,13 +64,10 @@ export default function HowItWorks({ dictionary }: HowItWorksProps) {
           aria-label="DDS to PNG conversion steps"
         >
           {steps.map((step, index) => (
-            <motion.div
+            <div
               key={index}
-              className="relative"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2 }}
-              viewport={{ once: true }}
+              className="relative opacity-0 translate-y-5 animate-how-it-works-step"
+              style={{ animationDelay: `${index * 200}ms` }}
               role="listitem"
               aria-label={step.ariaLabel}
             >
@@ -98,7 +92,7 @@ export default function HowItWorks({ dictionary }: HowItWorksProps) {
                   aria-hidden="true"
                 />
               )}
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

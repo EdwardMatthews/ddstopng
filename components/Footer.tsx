@@ -1,7 +1,4 @@
-'use client'
-
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 import { Twitter, Facebook, Linkedin, Github } from 'lucide-react'
 
 interface FooterProps {
@@ -60,11 +57,9 @@ export default function Footer({ dictionary }: FooterProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="space-y-4"
+          <div 
+            className="space-y-4 opacity-0 translate-y-4 animate-footer-item"
+            style={{ animationDelay: '0ms' }}
           >
             <h3 className="text-lg font-semibold text-white">
               {dictionary.about.title}
@@ -72,15 +67,12 @@ export default function Footer({ dictionary }: FooterProps) {
             <p className="text-sm leading-relaxed">
               {dictionary.about.description}
             </p>
-          </motion.div>
+          </div>
 
           {/* Navigation Links */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="space-y-4"
+          <div 
+            className="space-y-4 opacity-0 translate-y-4 animate-footer-item"
+            style={{ animationDelay: '100ms' }}
           >
             <h3 className="text-lg font-semibold text-white">
               {dictionary.navigation.title}
@@ -97,15 +89,12 @@ export default function Footer({ dictionary }: FooterProps) {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Tools Links */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="space-y-4"
+          <div 
+            className="space-y-4 opacity-0 translate-y-4 animate-footer-item"
+            style={{ animationDelay: '200ms' }}
           >
             <h3 className="text-lg font-semibold text-white">
               {dictionary.tools.title}
@@ -124,15 +113,12 @@ export default function Footer({ dictionary }: FooterProps) {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
           {/* Social Links */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="space-y-4"
+          <div 
+            className="space-y-4 opacity-0 translate-y-4 animate-footer-item"
+            style={{ animationDelay: '300ms' }}
           >
             <h3 className="text-lg font-semibold text-white">
               {dictionary.social.title}
@@ -162,7 +148,7 @@ export default function Footer({ dictionary }: FooterProps) {
                 <span>{dictionary.social.github}</span>
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </footer>

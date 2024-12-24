@@ -43,6 +43,10 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
+  if (pathname === '/') {
+    return NextResponse.next()
+  }
+
   // 对于静态文件和API路由，直接跳过处理
   if (
     pathname.includes('.') || 

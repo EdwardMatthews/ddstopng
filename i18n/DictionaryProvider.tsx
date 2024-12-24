@@ -1,7 +1,6 @@
 'use client'
 
 import { createContext, useContext, ReactNode } from 'react'
-import type { ValidLocale } from './config'
 
 type Dictionary = Record<string, any>
 

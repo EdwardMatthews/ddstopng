@@ -1,7 +1,3 @@
-'use client'
-
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronDown } from 'lucide-react'
 
 interface FAQProps {
@@ -34,8 +30,6 @@ interface FAQProps {
 }
 
 export default function FAQ({ dictionary }: FAQProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
-
   const faqs = [
     dictionary.items.what,
     dictionary.items.why,
@@ -66,17 +60,15 @@ export default function FAQ({ dictionary }: FAQProps) {
           itemType="https://schema.org/FAQPage"
         >
           {faqs.map((faq, index) => (
-            <div
+            <details
               key={index}
-              className="bg-white rounded-lg shadow-sm"
+              className="bg-white rounded-lg shadow-sm group"
               itemScope
               itemType="https://schema.org/Question"
               itemProp="mainEntity"
             >
-              <button
-                className="w-full px-6 py-4 flex items-center justify-between text-left"
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                aria-expanded={openIndex === index}
+              <summary
+                className="w-full px-6 py-4 flex items-center justify-between text-left cursor-pointer list-none"
               >
                 <span 
                   className="text-lg font-medium text-gray-900"
@@ -84,39 +76,28 @@ export default function FAQ({ dictionary }: FAQProps) {
                 >
                   {faq.question}
                 </span>
-                <motion.div
-                  animate={{ rotate: openIndex === index ? 180 : 0 }}
-                  transition={{ duration: 0.2 }}
+                <div
+                  className="transform transition-transform duration-200 group-open:rotate-180"
                   aria-hidden="true"
                 >
                   <ChevronDown className="w-5 h-5 text-gray-500" />
-                </motion.div>
-              </button>
+                </div>
+              </summary>
 
               <div
+                className="px-6 pb-4 text-gray-600"
                 itemScope
                 itemType="https://schema.org/Answer"
                 itemProp="acceptedAnswer"
               >
-                <AnimatePresence>
-                  {openIndex === index && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: 'auto', opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <div 
-                        className="px-6 pb-4 text-gray-600"
-                        itemProp="text"
-                      >
-                        {faq.answer}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            </div>
+                  <div 
+                    className="px-6 pb-4 text-gray-600"
+                    itemProp="text"
+                  >
+                    {faq.answer}
+                  </div>
+                </div>
+            </details>
           ))}
         </div>
       </div>

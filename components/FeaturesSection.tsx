@@ -1,7 +1,4 @@
-'use client'
-
 import { Shield, Zap, Download, Smile } from 'lucide-react'
-import { motion } from 'framer-motion'
 
 interface FeaturesSectionProps {
   dictionary: {
@@ -82,20 +79,19 @@ export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
           </p>
         </div>
 
-        <motion.div 
+        <div 
           className="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
           role="list"
           aria-label="DDS to PNG converter features"
         >
           {features.map((feature, index) => (
-            <motion.div
+            <div
               key={index}
-              className="relative p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
-              variants={item}
+              className="relative p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 opacity-0 translate-y-4 animate-feature"
+              style={{ 
+                animationDelay: `${index * 200}ms`,
+                animationFillMode: 'forwards'
+              }}
               role="listitem"
               aria-label={feature.ariaLabel}
             >
@@ -111,9 +107,9 @@ export default function FeaturesSection({ dictionary }: FeaturesSectionProps) {
               <p className="text-gray-600">
                 {feature.description}
               </p>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   )
