@@ -14,7 +14,7 @@ export default async function Home() {
 
   return (
     <>
-      <Header lang="en" />
+      <Header lang="" />
       <LanguageDetector />
       <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
         <LanguageSwitcher />
