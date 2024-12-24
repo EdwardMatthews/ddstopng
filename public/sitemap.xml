@@ -3,12 +3,20 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <url>
+    <loc>https://dds2png.com/</loc>
+    <lastmod>2024-02-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
   <!-- 英文页面 -->
   <url>
     <loc>https://dds2png.com/en</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 
   <!-- 中文页面 -->
@@ -16,7 +24,7 @@
     <loc>https://dds2png.com/zh</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 
   <!-- 印尼语页面 -->
@@ -24,6 +32,6 @@
     <loc>https://dds2png.com/id</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 </urlset> 
