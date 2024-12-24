@@ -5,7 +5,7 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
   <url>
-    <loc>https://dds2png.com/</loc>
+    <loc>https://www.dds2png.com/</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
   
   <!-- 英文页面 -->
   <url>
-    <loc>https://dds2png.com/en</loc>
+    <loc>https://www.dds2png.com/en</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -21,7 +21,7 @@
 
   <!-- 中文页面 -->
   <url>
-    <loc>https://dds2png.com/zh</loc>
+    <loc>https://www.dds2png.com/zh</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
 
   <!-- 印尼语页面 -->
   <url>
-    <loc>https://dds2png.com/id</loc>
+    <loc>https://www.dds2png.com/id</loc>
     <lastmod>2024-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
