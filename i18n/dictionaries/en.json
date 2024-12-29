@@ -132,7 +132,11 @@
       "items": [
         {
           "label": "Iframe Generator",
-          "href": "https://iframegenerator.pro/"
+          "href": "https://www.iframegenerator.pro/"
+        },
+        {
+          "label": "WebP to PDF",
+          "href": "https://webptopdf.pro/"
         }
       ]
     },
