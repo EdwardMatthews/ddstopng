@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import { Metadata } from 'next'
 import '@/app/globals.css'
 import { getDictionary } from '@/i18n/getDictionary'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -48,6 +49,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={inter.className}>
         {children}
       </body>

@@ -1,6 +1,7 @@
 import { getDictionary } from '@/i18n/getDictionary'
 import { DictionaryProvider } from '@/i18n/DictionaryProvider'
 import { ValidLocale, locales } from '@/i18n/config'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 import Header from '@/components/Header'
 
 export async function generateMetadata({ params: { lang } }: { params: { lang: ValidLocale } }) {
@@ -54,6 +55,9 @@ export default async function LangLayout({
 
   return (
     <html lang={lang}>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body>
         <DictionaryProvider dictionary={dictionary}>
           <div className="min-h-screen flex flex-col" lang={lang}>
