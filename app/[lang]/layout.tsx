@@ -14,7 +14,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: V
     alternates: {
       canonical: `/${lang}`,
       languages: {
-        'en': '/en',
+        'en': '/',
         'zh': '/zh',
         'id': '/id'
       }

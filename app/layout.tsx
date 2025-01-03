@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
     alternates: {
       canonical: '/',
       languages: {
-        'en': '/en',
+        'en': '/',
         'zh': '/zh',
         'id': '/id'
       }
