@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description: dictionary.metadata.twitterDescription,
     },
     icons: {
-      icon: '/logo.svg',
+      icon: '/favicon.ico',
       shortcut: '/logo.svg',
       apple: '/logo.svg',
     }

@@ -33,7 +33,7 @@ export async function generateMetadata({ params: { lang } }: { params: { lang: V
       description: dictionary.metadata.twitterDescription,
     },
     icons: {
-      icon: '/logo.svg',
+      icon: '/favicon.ico',
       shortcut: '/logo.svg',
       apple: '/logo.svg',
     }
