@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Twitter, Facebook, Linkedin, Github } from 'lucide-react'
+import { Twitter, Facebook, Linkedin, Github, Calendar } from 'lucide-react'
 
 interface FooterProps {
   dictionary: {
@@ -49,6 +49,11 @@ export default function Footer({ dictionary }: FooterProps) {
       icon: <Linkedin className="w-5 h-5" />,
       href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`,
       label: 'LinkedIn'
+    },
+    {
+      icon: <Calendar className="w-5 h-5" />,
+      href: 'https://cal.com/edward-umt5ht',
+      label: 'Cal'
     }
   ]
 
