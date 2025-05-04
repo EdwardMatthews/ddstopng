@@ -47,6 +47,10 @@ export function middleware(request: NextRequest) {
     return NextResponse.next()
   }
 
+  if (pathname === '/r') {
+    return NextResponse.next()
+  }
+
   // 对于静态文件和API路由，直接跳过处理
   if (
     pathname.includes('.') || 
